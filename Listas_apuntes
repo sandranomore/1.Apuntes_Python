@@ -1,0 +1,100 @@
+[LISTAS] 
+
+La lista es una colección ordenada y modificable. Permite miembros duplicados.
+Tupla es una colección ordenada e inmutable. Permite miembros duplicados.
+Set es una colección desordenada, inmutable* y no indexada. No hay miembros duplicados.
+El diccionario es una colección ordenada** y modificable. No hay miembros duplicados.
+
+Las listas nos permiten realizar operaciones como ordenamiento, filtrado y cálculos estadísticos en conjuntos de datos
+
+Se crea una lista con [ ] :    temperaturas_diciembre = [10, 10, 13, 13]
+Se pueden modificar.
+Pueden tener elementos de distintos tipos.
+Los elementos se separan con comas.
+El índice empieza por 0.
+El último elemento su indice en -1.
+NOTA: podemos acceder a los elementos de una lista por la izquierda (su índice empezara en 0) o por la derecha (su índice será -1).
+Se pueden concatenar/unir listas.
+Para acceder a los índices usamos los corchetes: lista[indice]
+
+PROPIEDADES de las listas:
+len( ): contar elementos  de la lista.
+max( ) : nos devuevle el valor máximo de la lista.
+min( ): nos devuelve el valor mínimo.
+in y not in: nos chequea si un valor especificado está en la lista.
+
+MÉTODOS de las listas:
+copy( ): hacer una copia exacta de la lista
+index( ): nos dice cual es el índice de un elemento especificado.
+count( ): nos dice cuántas veces aparece un elemento en la lista.
+lista.1.count(1)
+
+Para ORDENAR listas:
+sort: sobreescribe en la lista original
+sorted: no sobreescribe. 
+reverse: invierte la lista
+
+Para AÑADIR elementos:
+append( ): añade al final y sobreescribe
+lista1 = [2,3,4,5]
+lista2 = [7,8,9]
+lista2.append(lista1)
+# output, NOS DEVUELVE UNA LISTA DE LISTAS
+[7,8,9, [2,3,4,5]]
+
+extend( ): añade al final y sobreescribe. Es igual que el operador +.
+lista1 = [2,3,4,5]
+lista2 = [7,8,9]
+lista2.append(lista1)
+# output, NOS DEVUELVE UNA ÚNICA LISTA CON TODOS LOS ELEMENTOS
+[7,8,9, 2,3,4,5]
+
+insert( ): nos permite iinsertar un elemento en una posicion dada.
+lista3 = [2,3,4,5]
+lista3.insert(3, "Hola")
+# output, NOS EL ELEMNTO "HOLA" EN EL INDICE 3
+[2,3,4,"Hola", 5]
+
+Para ELIMINAR elementos:
+pop( ): por defecto elimina el ultimo. Si no elimina el elementos que especificamos basandose en la posicion/indice. Hay dos formas de hacerlo:
+lista = [1, 0,2,3]
+# si no especificamos nada, nos elimina el último elemento
+lista.pop( )
+lista.pop(1) # nos elimina el elemento que está en el índice que le especificamos. En este caso nos elimina el número 0. 
+
+remove( ) : elimina el elemento que le especificamos (la primera aparicion), basandose en valores/elementos lista1-remove([ 15, 20])
+lista = ["Hola", "Que tal", "estamos aprendiendo"]
+lista.remove("Hola") # nos eliminará el elemento "Hola" de la lista
+# output
+lista = [ "Que tal", "estamos aprendiendo"]
+
+clear( ): vacia la lista.
+
+
+(TUPLAS) 
+(son inmutables, NO se pueden modificar después de haber sido creadas)
+Colección de elementos que  nos proporcionan una estructura segura y estable para almacenar información que no debe modificarse.
+
+mi_tupla = (1, 'dos', True, 3.14)
+
+Se definen con ( ).
+NO se pueden modificar.
+Pueden tener elementos de distintos tipos.
+Los elementos se separan con comas.
+El índice empieza por 0.
+El último elemento su indice en -1.
+NOTA: podemos acceder a los elementos de una lista por la izquierda (su índice empezara en 0) o por la derecha (su índice será -1).
+
+PROPIEDADES de las listas:
+len( ): nos devuelve el número de elementos de la lista.
+max( ) : nos devuevle el valor máximo de la lista.
+min( ): nos devuelve el valor mínimo.
+in y not in: nos chequea si un valor especificado está en la lista.
+
+MÉTODOS de las listas: 
+copy( ): hacer una copia exacta de la lista
+index( ): nos dice cual es el índice de un elemento especificado.
+count( ): nos dice cuántas veces aparece un elemento en la lista.
+primer_elemento = mi_tupla[0]
+segundo_elemento = mi_tupla[1]
+

@@ -1,0 +1,71 @@
+VARIABLES
+Datos, se refiere a la información (num o texto)
+
+Las variables son espacios de memoria en donde se almacenan un tipo de dato y las cuales se identifican con un nombre, para entender mejor su concepto puede compararse con una caja que almacena un tipo de objetos y que esta marcada con un nombre relacionado a lo que contiene.
+
+Las variables en python se declaran así: nombre_variable = [dato o valor]
+Las variables pueden ser declaradas, consultadas o modificadas a lo largo de nuestro programa.
+Para recibir un dato del usuario podemos usar el comando input(“texto a mostrar”).
+
+
+TIPOS de variables que tenemos en Python:
+
+1.NUMÉRICAS
+
+-Float: números decimales, los decimales en Python se ponen con ..
+-Integer (enteros): números enteros.
+
+2."CADENA DE TEXTO"
+-String: cadenas de texto. Tienen que ir entre comillas (", '). Si empezamos la sentencia con comilla simple, terminamos con comilla simple y lo mismo para la comilla doble.
+
+3.BOOLEANAS
+- True o False. La primera letra siempre tiene que ir en mayúsculas. Nota:
+True Python lo entiende como 1
+False Python lo entiende como 0. Por lo que nunca lo podremos usar para dividir.
+
+
+TIPOS DE OPERACIONES
+
+1. ASIGNACIÓN  ( todas las variables)
+Operador de asignación: =
+
+2. COMPARACIÓN (todas las variables)
+Operadores de comparación:
+>: mayor que
+<: menor que
+= cambiamos el valor, es una asignación (e = f )
+==: igual que (es una comparación, para saber si 2 variables son iguales)
+!=: distinto de
+is: comprueba si dos objetos son idénticos.
+is not: comprueba si dos objetos no son idénticos.
+>=: mayor o igual que
+<=: menos o igual que
+NOTA: and y el or nos sirven para poder combinar distintas comparaciones. Ciudado cuando los usaremos, los paréntesis son importantes.
+
+3. ALGEBRAICAS ( numéricas)
+Operadores algebraicos:
++ : sumar
+- : restar
+*: multiplicar
+**: elevar
+// : division entera (redondea el resultado)
+/: division exacta
+%: resto de la división
+6.00 el punto es coma, es decimal
+
+4. MÉTODOS DE STRING (cadenas de texto)
+upper: todo en mayuscula
+lower: todo en minuscula
+capitalize: la primera letra de la cadena de texto.
+title: la primera letra de cada palabra de la cadena de texto.
+swapcase: cambia de mayuscula a minuscula y viceversa
+strip: quita los espacio al incio y al final de la cadena de texto
+split: divide nuestra cadena de texto, por defecto lo hace por espacio. Pero podemos especificar porque queremos dividir. Nos devuelve una lista. CUIDADO, EL ELEMENTO POR EL QUE DIVIDIMOS DESAPARECE EN LA LISTA RESULTANTE. NOTA:
+\n: para dividir por salto de linea
+\t: para dividir por tabulador
+replace: reemplaza un elemento de un string, por lo que especifiquemos
+string.replace("lo que queremos reemplazar", "nuevo_string")
+join: lo usaremos con listas. TODOS LOS ELEMENTOS DE LA LISTA TIENEN QUE SER DE TIPO STRING
+
+ISISTANCE
+print ( isintance "e, float")
